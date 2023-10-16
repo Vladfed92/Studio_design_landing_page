@@ -58,6 +58,10 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 0.8rem;
+  transition: 0.2s ease-in;
+}
+.footer_lincs ul li a:hover {
+  font-size: 1.2rem;
 }
 
 .copytights {

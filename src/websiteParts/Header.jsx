@@ -5,7 +5,9 @@ function Header() {
   return (
     <header>
       <nav>
-        <img src={logo} alt="Logo" className={style.logo} />
+        <a href="">
+          <img src={logo} alt="Logo"/>
+        </a>
         <ul className={style.navigation_refs}>
           <li className={style.ref}>
             <a href="">Home</a>

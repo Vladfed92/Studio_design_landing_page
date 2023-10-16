@@ -4,6 +4,10 @@ main {
   flex: 1 1 auto;
 }
 
+.main{
+	position: relative;
+}
+
 .main_info {
   position: relative;
   width: 100%;
@@ -31,6 +35,28 @@ main {
   border-radius: 60px;
   background-color: #2639ed;
   border: none;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: 'Click!';
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  font-size: 1.2rem;
+  padding: 20px 40px;
+  border-radius: 60px;
+  background-color: #2ab4ff;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  top: 0;
+  left: -200px;
+}
+.button:hover::before {
+  left: 0;
 }
 
 .dots {
@@ -43,8 +69,8 @@ main {
 
 .main_img {
   position: absolute;
-  top: 120px;
-  right: 210px;
+  top: -127px;
+  right: -120px;
 }
 
 .main_img img {
@@ -450,7 +476,7 @@ main {
   width: 178px;
   height: 178px;
   border-radius: 0 0 100px 0;
-  background-color: #FFF5DB;
+  background-color: #fff5db;
   left: -39px;
   bottom: -39px;
   z-index: -1;
@@ -488,4 +514,11 @@ main {
 .email_input {
   border: none;
   color: #959595;
+}
+
+input.button:hover {
+  opacity: 0.7;
+}
+input:focus {
+  outline: none;
 }

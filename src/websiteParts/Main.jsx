@@ -25,7 +25,9 @@ function Main() {
             We build readymade websites, mobile applications, and elaborate
             online business services.
           </p>
-          <button className={style.button}>Contact Now</button>
+          <a href="#">
+            <button className={style.button}>Contact Now</button>
+          </a>
           <img src={dots} className={style.dots} />
         </div>
         <div className={style.main_img}>

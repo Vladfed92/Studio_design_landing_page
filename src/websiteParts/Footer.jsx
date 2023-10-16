@@ -10,7 +10,9 @@ function Footer() {
     <footer>
       <div className={style.footer_info}>
         <div className={style.footer_short_info}>
-          <img src={logo} alt="" className={style.footer_logo} />
+          <a href="">
+            <img src={logo} alt="" className={style.footer_logo} />
+          </a>
           <p className={style.footer_short_info}>
             Leading digital agency with solid design and development expertise.
             We build readymade websites, mobile applications, and elaborate
