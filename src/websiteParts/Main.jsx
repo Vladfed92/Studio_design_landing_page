@@ -157,6 +157,37 @@ function Main() {
           </div>
         </div>
       </div>
+      {/* --------------------------------- SUBSCRIBE-FORM - INFO */}
+      <div className={style.subscribe_form}>
+        <div className={style.subscribe_info}>
+          <h3 className={style.subscribe_title}>Subscribe Newsletter</h3>
+          <p className={style.subscribe_subtitle}>
+            I will update good news and promotion service not spam
+          </p>
+        </div>
+        <form action="" method="get">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className={style.email_input}
+            placeholder="Enter your email address.."
+          />
+          <input type="submit" className={style.button} value="Contact Now" />
+        </form>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="497"
+          height="292"
+          viewBox="0 0 497 292"
+          fill="none"
+        >
+          <path
+            d="M7.07175 158.172C-19.0148 80.4252 38.8318 0 120.839 0H422C463.421 0 497 33.5786 497 75V217C497 258.421 463.421 292 422 292H123.901C80.9308 292 42.7643 264.549 29.0954 223.81L7.07175 158.172Z"
+            fill="#2639ED"
+          />
+        </svg>
+      </div>
     </main>
   )
 }

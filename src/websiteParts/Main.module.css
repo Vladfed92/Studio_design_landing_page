@@ -417,3 +417,75 @@ main {
 .other_clients_icons {
   position: absolute;
 }
+
+/* SUBSCRIBE FORM  */
+
+.subscribe_form {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 292px;
+  width: 100%;
+  background-color: #f4f9ff;
+  border-radius: 75px;
+  position: relative;
+}
+
+.subscribe_form::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 175px;
+  height: 154px;
+  background-image: url('../img/happy_clients/mini_dot.png');
+  top: -50px;
+  right: -37px;
+  z-index: -1;
+}
+.subscribe_form::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 178px;
+  height: 178px;
+  border-radius: 0 0 100px 0;
+  background-color: #FFF5DB;
+  left: -39px;
+  bottom: -39px;
+  z-index: -1;
+}
+
+.subscribe_title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+.subscribe_subtitle {
+  font-size: 1.1rem;
+  color: #757575;
+}
+
+.subscribe_form form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 479px;
+  padding: 10px 10px 10px 34px;
+  height: 80px;
+  border-radius: 60px;
+  border: 1px solid #f1f1f1;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.subscribe_form svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.email_input {
+  border: none;
+  color: #959595;
+}
