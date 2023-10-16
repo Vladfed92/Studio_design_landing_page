@@ -10,6 +10,8 @@ import icon2 from '../img/halp_your_busines/chart-square 1.png'
 import icon3 from '../img/halp_your_busines/code-1 1.png'
 import icon4 from '../img/halp_your_busines/empty-wallet 1.png'
 import main_video from '../img/since_2016/video.mp4'
+import main_client from '../img/happy_clients/1.png'
+import other_clients_group from '../img/happy_clients/Group 71.png'
 
 function Main() {
   return (
@@ -123,6 +125,36 @@ function Main() {
             modern idea accordingly their budgets and according thir
             reuirements.
           </p>
+        </div>
+      </div>
+      {/* --------------------------------- HAPPY CLIENTS - INFO */}
+      <div className={style.happy_clients}>
+        <div className={style.happy_clients_info}>
+          <h2 className={style.happy_clients_title}>
+            What our happy client say
+          </h2>
+          <p className={style.happy_clients_subtitle}>
+            Several selected clients, who already believe in our service.
+          </p>
+        </div>
+        <div className={style.clients_posts}>
+          <div className={style.main_clients_post}>
+            <img src={main_client} className={style.main_client_icon} />
+            <div className={style.main_client_post_info}>
+              <h4 className={style.main_client_post_title}>Matthew Paul</h4>
+              <p className={style.main_client_post_subtytle}>
+                Perfect, very good job! Thank you for the amazing design and
+                work. Really impressed with the high quality and quick
+                turnaround time. Highly recommend.
+              </p>
+            </div>
+          </div>
+          <div className={style.other_clients}>
+            <img
+              src={other_clients_group}
+              className={style.other_clients_icons}
+            />
+          </div>
         </div>
       </div>
     </main>
