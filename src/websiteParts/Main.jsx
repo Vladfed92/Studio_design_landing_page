@@ -141,7 +141,9 @@ function Main() {
         </div>
         <div className={style.clients_posts}>
           <div className={style.main_clients_post}>
-            <img src={main_client} className={style.main_client_icon} />
+            <div className={style.main_client_icon}>
+              <img src={main_client} />
+            </div>
             <div className={style.main_client_post_info}>
               <h4 className={style.main_client_post_title}>Matthew Paul</h4>
               <p className={style.main_client_post_subtytle}>

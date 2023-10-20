@@ -1,15 +1,15 @@
 /* MAIN INFORMATION */
-
+/* mid - 1124px */
 main {
   flex: 1 1 auto;
 }
 
-.main{
-	position: relative;
+.main {
+  position: relative;
+  display: flex;
 }
 
 .main_info {
-  position: relative;
   width: 100%;
   max-width: 471px;
   margin-top: 121px;
@@ -69,12 +69,12 @@ main {
 
 .main_img {
   position: absolute;
-  top: -127px;
   right: -120px;
 }
 
 .main_img img {
-  min-width: 754px;
+  width: 100%;
+  max-width: 754px;
 }
 
 .main_img::before {
@@ -202,7 +202,8 @@ main {
   flex-wrap: wrap;
   height: 100%;
   max-height: 900px;
-  margin-right: 33px;
+  width: 100%;
+  min-width: 670px;
   position: relative;
 }
 
@@ -211,7 +212,7 @@ main {
   display: block;
   position: absolute;
   top: 140px;
-  left: -220px;
+  right: -130px;
   border-radius: 150px 0px 0px 0px;
   background: #f4f9ff;
   width: 1047px;
@@ -219,24 +220,29 @@ main {
   z-index: -1;
 }
 
-.help_tips:after {
+.tip:last-child {
+  position: relative;
+}
+
+.tip:last-child::after {
   content: '';
   display: block;
   position: absolute;
-  bottom: 75.8px;
-  right: -10px;
+  bottom: -43px;
+  right: -40px;
   width: 120px;
   height: 120px;
   border: #ff007a solid 8.8px;
   border-radius: 50%;
-  z-index: -3;
+  z-index: -2;
 }
 
 .tip {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 308px;
+  width: 100%;
+  max-width: 308px;
   height: 379px;
   margin-bottom: 30px;
   margin-right: 30px;
@@ -289,6 +295,7 @@ main {
 /* DIGITAL PRODUCT */
 
 .digital_product {
+  width: 100%;
   margin-top: 140px;
   display: flex;
   justify-content: space-between;
@@ -297,6 +304,8 @@ main {
 
 .video {
   position: relative;
+  margin-right: 20px;
+  width: 50%;
 }
 
 .video::after {
@@ -307,20 +316,21 @@ main {
   border-radius: 50%;
   height: 129px;
   width: 129px;
-  bottom: -60px;
-  right: -41px;
+  bottom: -50px;
+  right: 20px;
   z-index: -1;
 }
 
 .video video {
   object-fit: cover;
+  width: 100%;
   max-width: 540px;
   box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
   border-radius: 32px;
 }
 
 .digital_info {
-  width: 100%;
+  width: 50%;
   max-width: 540px;
   position: relative;
 }
@@ -377,20 +387,30 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main_client_icon {
+  width: 50%;
+  margin-right: 65px;
   position: relative;
 }
-.main_clients_post::before {
+.main_client_icon img {
+  border-radius: 65% 0px 65% 65%;
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+.main_client_icon::before {
   content: '';
   background-image: url(../img/happy_clients/mini_dot.png);
   display: block;
   width: 196px;
   height: 154px;
   position: absolute;
-  z-index: -1;
   top: -42px;
-  left: 227px;
+  right: -37px;
+  z-index: -1;
 }
-.main_clients_post::after {
+.main_client_icon::after {
   content: '';
   display: block;
   position: absolute;
@@ -398,17 +418,12 @@ main {
   height: 120px;
   border: #ff007a solid 8.8px;
   border-radius: 50%;
-  left: -15px;
-  bottom: 25px;
+  bottom: 12px;
+  left: -10px;
   z-index: -1;
 }
-.main_client_icon {
-  border-radius: 65% 0px 65% 65%;
-  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 65px;
-}
 .main_client_post_info {
-  width: 100%;
+  width: 40%;
   max-width: 412px;
 }
 .main_client_post_title {
@@ -521,4 +536,181 @@ input.button:hover {
 }
 input:focus {
   outline: none;
+}
+
+/* MEDIA */
+
+@media (max-width: 1124px) {
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_info {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .main_img {
+    position: initial;
+  }
+
+  .button::before{
+display: none;
+  }
+  .our_clients {
+    flex-direction: column;
+    margin-bottom: 180px;
+  }
+
+  .clients_info {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .clients_icons a {
+    margin-right: 30px;
+  }
+  .help {
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  .help_tips {
+    align-items: center;
+    min-width: 0;
+  }
+  .help_tips::before {
+    right: 0;
+  }
+  .tip {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .digital_product {
+    flex-direction: column;
+  }
+  .video {
+    margin-bottom: 50px;
+  }
+
+  .digital_info {
+    text-align: center;
+  }
+
+  .clients_posts {
+    flex-direction: column-reverse;
+    margin-top: 70px;
+  }
+  .other_clients_icons {
+    width: 85%;
+  }
+
+  .subscribe_form {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .subscribe_form::before {
+    right: 0;
+  }
+  .subscribe_info {
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px 60px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .help_info {
+    text-align: center;
+    margin: 0;
+  }
+
+  .help_tips {
+    flex-wrap: nowrap;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .main_title {
+    font-size: 2rem;
+  }
+  .main_subtitle {
+    font-size: 0.8rem;
+  }
+  .button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  .clients_title {
+    font-size: 2rem;
+  }
+  .clients_subtitle {
+    font-size: 0.9rem;
+  }
+  .help {
+    margin-top: 150px;
+  }
+  .help_title {
+    font-size: 2rem;
+  }
+  .help_subtitle {
+    font-size: 0.8rem;
+  }
+  .video {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .digital_info {
+    width: 100%;
+  }
+  .digital_title {
+    font-size: 2rem;
+  }
+  .happy_clients_info {
+    margin-top: 100px;
+  }
+  .other_clients {
+    display: none;
+  }
+  .main_clients_post {
+    flex-direction: column;
+  }
+  .main_client_icon {
+    margin-right: 0;
+    margin-bottom: 40px;
+    width: 80%;
+  }
+  .main_client_post_info {
+    width: 100%;
+    text-align: center;
+  }
+  .main_client_post_subtytle {
+    font-size: 0.8rem;
+  }
+  .subscribe_form {
+    margin-top: 100px;
+  }
+  .subscribe_title {
+    font-size: 2rem;
+  }
+  .subscribe_subtitle {
+    font-size: 0.9rem;
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe_form form {
+    padding: 5px 5px 5px 16px;
+    max-width: 320px;
+    max-height: 60px;
+  }
+  .subscribe_form {
+    font-size: 0.8rem;
+  }
 }
